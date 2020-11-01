@@ -391,3 +391,60 @@ h1, h2, h3, h4, h5, h6 {
    }
 }
 
+/* 320px - 576px */
+@media screen and (max-width: 576px){
+	#menu__toggle:checked ~ .menu__box {
+      left: 170px;
+    }
+   .menu__btn{
+      left: 300px;
+   }
+
+   .menu__box{
+      width: 167px;
+      padding-top: 100px;
+   }
+
+   .menu__item {
+      display: block;
+      padding: 3px 10px;
+   }
+   
+   .input{
+      margin-top: 25px;
+      width: 250px;
+      font-size: 16px;
+   }
+
+   .title{
+      width: 300px;
+      padding-top: 40px;
+   }
+
+   .instalamp{
+      padding-top: 350px;
+   
+   }
+   .header{
+      height: 900px;
+   }
+   .product , .quality , .box{
+      flex-direction: column;
+      text-align: center;
+   }
+   .photo{
+      width: 90%;
+   }
+
+   .head{
+      width: 300px;
+   }
+
+   .logo-name{
+      margin-left: -40px;
+   }
+
+ h2{
+      font-size: 25px;
+   }
+}
