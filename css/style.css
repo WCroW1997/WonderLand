@@ -28,17 +28,99 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-ul{
-	list-style-type:  none;
-	padding: 0;
+#menu__toggle {
+   opacity: 0;
  }
+ 
+ #menu__toggle:checked ~ .menu__btn > span {
+   transform: rotate(45deg);
+ }
+ #menu__toggle:checked ~ .menu__btn > span::before {
+   top: 0;
+   transform: rotate(0);
+ }
+ #menu__toggle:checked ~ .menu__btn > span::after {
+   top: 0;
+   transform: rotate(90deg);
+ }
+ #menu__toggle:checked ~ .menu__box {
+   visibility: visible;
+   left: 1150px;
+ }
+ 
+ .menu__btn {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 86px;
+   left: 1250px;
+ 
+   width: 26px;
+   height: 26px;
+ 
+   cursor: pointer;
+   z-index: 1;
+ }
+ 
+ .menu__btn > span,
+ .menu__btn > span::before,
+ .menu__btn > span::after {
+   display: block;
+   position: absolute;
+ 
+   width: 100%;
+   height: 2px;
+ 
+   background-color: #fff;
+ 
+   transition-duration: .25s;
+ }
+ .menu__btn > span::before {
+   content: '';
+   top: -8px;
+ }
+ .menu__btn > span::after {
+   content: '';
+   top: 8px;
+ }
+ 
+ .menu__box {
+   display: block;
+   position: absolute;
+   visibility: hidden;
+   top: 0;
+   left: -100%;
+ 
+   width: 300px;
+   height: 100%;
+ 
+   margin: 0;
+   padding: 120px 0;
+ 
+   list-style: none;
+ 
 
- .nav li{
-   display: inline-block;
-   margin: 0 20px;
-   font-style: italic;
-   font-weight: 300;
-   line-height: 37px;
+   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+ 
+   transition-duration: .25s;
+ }
+ 
+ .menu__item {
+   display: block;
+   padding: 12px 24px;
+ 
+   color: #fff;
+ 
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+ 
+   text-decoration: none;
+ 
+   transition-duration: .25s;
+ }
+ .menu__item:hover {
+   background-color: #CFD8DC;
  }
 
  .head , .offer{
@@ -46,6 +128,21 @@ ul{
    justify-content: space-between;
 	align-items:center;
  }
+
+ .logo{
+    width: 150px;
+    border-radius: 100px;
+    background: #fff;
+ }
+
+.head{
+   width: 450px;
+}
+.logo-name{
+   /* margin: 0;
+   padding: 0; */
+   margin-left: -75px;
+}
 
  .offer{
    padding-top: 140px;
@@ -58,7 +155,7 @@ ul{
  .instalamp{
    position: absolute;
    /* padding-top: 150px; */
-   padding-left: 598px;
+   padding-left: 600px;
  }
 
  .promo{
@@ -81,7 +178,6 @@ ul{
 
  h1{
     font-size: 36px;
-    font-style: italic;
     font-weight: 900;
     line-height: 44px;
  }
@@ -109,7 +205,7 @@ ul{
 .photo2{
    border-radius: 50px;
    width: 700px;
-   /* padding-left: 200px; */
+
 }
 
 .title1 , .title2 , .title3 {
@@ -164,4 +260,134 @@ ul{
 
 
 
+
+ /* 992px - 1200px */
+@media screen and (max-width: 1100px){
+	.container{
+      width: 90%;
+   }
+   
+   .nav li{
+      margin: 0 15px;
+   }
+
+   .logo{
+      width: 100px;
+   }
+   .instalamp{
+      padding-left:  350px;
+   }
+
+   #menu__toggle:checked ~ .menu__box {
+      left: 840px;
+    }
+   .menu__btn{
+      left: 900px;
+   }
+
+
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px){
+   .photo{
+      width: 50%;
+   }
+   .title1 , .title2 , .title3 {
+      width: 320px;
+   }
+   .logo{
+      width: 50px;
+   }
+   .logo-name{
+      padding: 0;
+   }
+   .nav li{
+      margin: 0 0;
+   }
+
+   .head{
+      width: 350px;
+   }
+   #menu__toggle:checked ~ .menu__box {
+      left: 568px;
+    }
+   .menu__btn{
+      top: 65px;
+      left: 700px;
+   }
+
+   .menu__box{
+      width: 200px;
+   }
+
+   .menu__item {
+      display: block;
+      padding: 5px 24px;
+   }
+
+   .offer{
+      font-size: 20px;
+      width: 350px;
+      padding-top: 50px;
+      margin: 0 auto;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .instalamp{
+      width: 70%;
+      padding-left:  0;
+      padding-top: 150px;
+   }
+
+   .photo2{
+      width: 80%;
+   }
+
+   .header{
+      height: 1000px;
+   
+   }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px){
+   #menu__toggle:checked ~ .menu__box {
+      left: 400px;
+    }
+   .menu__btn{
+      top: 65px;
+      left: 500px;
+   }
+
+   .menu__box{
+      width: 170px;
+      padding-top: 60px;
+   }
+
+   .menu__item {
+      display: block;
+      padding: 3px 4px;
+   }
+
+   .input{
+      margin-top: 25px;
+      width: 450px;
+   }
+   .instalamp{
+      width: 100%;
+   }
+
+   .offer{
+      width: 300px;
+   }
+
+   .body{
+      font-size: 16px;
+   }
+   .title1 , .title2 , .title3 {
+      padding: 0 10px;
+   }
+}
 
