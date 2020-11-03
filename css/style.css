@@ -139,13 +139,11 @@ h1, h2, h3, h4, h5, h6 {
    width: 450px;
 }
 .logo-name{
-   /* margin: 0;
-   padding: 0; */
    margin-left: -75px;
 }
 
  .offer{
-   padding-top: 140px;
+   padding-top: 40px;
  }
 
  .title{
@@ -154,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
 
  .instalamp{
    position: absolute;
-   /* padding-top: 150px; */
-   padding-left: 600px;
+   padding-left: 450px;
+
  }
 
  .promo{
@@ -262,6 +260,18 @@ h1, h2, h3, h4, h5, h6 {
    padding: 11px 64px;
    font-size: 25px;
    }
+
+   .price-list{
+      text-align: center;
+   }
+
+
+   li{
+      list-style: none;
+      margin-top: 20px;
+   }
+
+
  /* .footer{
     background: #000;
     height: 200px;
@@ -284,11 +294,12 @@ h1, h2, h3, h4, h5, h6 {
       width: 100px;
    }
    .instalamp{
-      padding-left:  350px;
+      width: 40%;
+      padding-left:  400px;
    }
 
    #menu__toggle:checked ~ .menu__box {
-      left: 840px;
+      left: 830px;
     }
    .menu__btn{
       left: 900px;
@@ -347,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
    .instalamp{
       width: 70%;
       padding-left:  0;
-      padding-top: 150px;
+      margin-top: 250px;
    }
 
    .photo2{
@@ -358,6 +369,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 1000px;
    
    }
+
 }
 
 /* 576px - 768px */
@@ -384,6 +396,9 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 25px;
       width: 450px;
    }
+   .btn-form{
+      width: 450px;
+   }
    .instalamp{
       width: 100%;
    }
@@ -398,15 +413,16 @@ h1, h2, h3, h4, h5, h6 {
    .title1 , .title2 , .title3 {
       padding: 0 10px;
    }
+
 }
 
 /* 320px - 576px */
 @media screen and (max-width: 576px){
 	#menu__toggle:checked ~ .menu__box {
-      left: 170px;
+      left: 150px;
     }
    .menu__btn{
-      left: 300px;
+      left: 280px;
    }
 
    .menu__box{
@@ -431,7 +447,9 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .instalamp{
-      padding-top: 350px;
+      width: 90%;
+      padding-top: 200px;
+      margin-right: 6px;
    
    }
    .header{
@@ -458,5 +476,9 @@ h1, h2, h3, h4, h5, h6 {
    }
    .btn-form{
       width: 250px;
+   }
+   .li-price{
+      font-size: 25px;
+      width: 200px;
    }
 }

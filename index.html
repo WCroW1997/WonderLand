@@ -3,30 +3,30 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="InstaLamp это отличный подарок для тех у кого все есть!">
+   <meta name="description" content="Не заешь что подарить на День Рождение, Новый Год или другой значимый праздник? Тогда InstaLamp твой выбор. Отличный подарок для того у кого все есть!">
+   <meta name="keyword" content="Подарок, Лучший подарок, тому у кого все есть, новогодний подарок, подарок на день рождение">
    <title>InstaLamp</title>
+
+   <!-- favicon -->
    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/manifest.json">
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
+
+    <!-- facebook -->
+   <meta property="og:url"                content="#" />
+   <meta property="og:type"               content="article" />
+   <meta property="og:title"              content="InstaLamp то что вам нужно" />
+   <meta property="og:description"        content="Не заешь что подарить на День Рождение, Новый Год или другой значимый праздник? Тогда InstaLamp твой выбор. Отличный подарок для того у кого все есть!" />
+   <meta property="og:image"              content="/img/photo_2020-10-20_20-33-09.jpg" />
 </head>
 <body>
-   <header class="header">
+   <header class="header" id="header">
       <div class="container">
          <div class="head">
             <img src="img/61022-200.png" alt="Логотип" class="logo">
@@ -41,16 +41,16 @@
               
                   <ul class="menu__box">
                      <li>
-                        <a class="menu__item" href="#">Главная</a>
+                        <a class="menu__item" href="#header">Главная</a>
                      </li>
                      <li>
-                        <a class="menu__item" href="#">Наши работы</a>
+                        <a class="menu__item" href="#galery">Наши работы</a>
                      </li>
                      <li>
-                        <a class="menu__item" href="#">Цены</a>
+                        <a class="menu__item" href="#price">Цены</a>
                      </li>
                      <li>
-                        <a class="menu__item" href="#">Заказать</a>
+                        <a class="menu__item" href="#order">Заказать</a>
                      </li>
                   </ul>
                 </div>
@@ -66,13 +66,13 @@
                </p>
                <a href="#" class="btn">Заказать</a>
             </div>
-            <img src="img/Lamp.png" alt="InstaLamp" class="instalamp">
+            <img src="img/Lam2p.png" alt="InstaLamp" class="instalamp">
          </div>
       </div>
    </header>
    <main class="main">
       <div class="container">
-         <section class="product">
+         <section class="product ">
                   <img src="img/photo_2020-10-27_08-34-34.jpg" alt="" class="photo">
                   <div class="title1">
                      <h2>
@@ -115,7 +115,7 @@
                      </p>
             </div>
          </section >
-         <section class="galery">
+         <section class="galery" id="galery">
             <h2>Наши работы</h2>
                            <!-- Slider main container -->
                <div class="swiper-container">
@@ -148,7 +148,19 @@
                   <div class="swiper-scrollbar"></div>
                </div>
          </section>
-         <section class="order">
+         <section class="price" id="price">
+            <div class="price-list">
+               <h2>
+                  Цена
+               </h2>
+                  <ul>
+                     <li class="li-price">InstaLamp - 500грн</li>
+                     <li class="li-price">Фирменная упаковка - 170грн</li>
+                     <li class="li-price">Дополнительное фото - 200 грн</li>
+                  </ul>
+            </div>
+         </section>
+         <section class="order" id="order">
             <h2>Закажи сейчас, и не прогадаешь!
             </h2>
             <form action="php/send.php" class="form" method="post">
